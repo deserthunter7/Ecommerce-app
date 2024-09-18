@@ -1,0 +1,70 @@
+/* Contact Form Container */
+form {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Textarea */
+textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+/* Submit Button */
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #003eea;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Button Hover Effect */
+button:hover {
+  background-color: #066401;
+}
+
+/* Form Input Focus */
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #0034de;
+  box-shadow: 0 0 5px rgba(0, 119, 255, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  form {
+    padding: 15px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    font-size: 14px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+}

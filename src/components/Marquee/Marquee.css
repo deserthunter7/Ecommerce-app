@@ -1,0 +1,39 @@
+.marquee-container {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%; /* Full width */
+  background-color: #f5f5f5;
+  padding: 10px 0;
+}
+
+.marquee {
+  display: inline-block;
+  animation: marquee 10s linear infinite;
+}
+
+.marquee-content {
+  display: inline-flex;
+  gap: 50px; /* Space between brand logos */
+}
+
+.marquee-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand-logo {
+  width: 80px; /* Adjust size as needed */
+  height: auto;
+  object-fit: contain; /* Ensure logos maintain aspect ratio */
+}
+
+/* Marquee animation */
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
